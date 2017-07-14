@@ -1,0 +1,16 @@
+﻿@model HelloWorldMVC.Models.RegisterViewModel
+@{
+    ViewBag.Title = "SignUp";
+}
+
+<h2>SignUp</h2>
+
+<p>If you would like to receive awesome emails about stuff, enter your email address below!</p>
+<br />
+<form method="post">
+    @Html.LabelFor(m => m.Email)
+    @Html.EditorFor(m => m.Email)
+    @Html.ValidationMessageFor(m => m.Email)
+    <input type="submit" value="Sign Up" />
+</form>
+
